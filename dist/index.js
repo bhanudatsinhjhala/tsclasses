@@ -4,6 +4,86 @@
  * Add methods to set and get each property.
  *
  */
+class Person {
+    constructor(name, age, address) {
+        this.name = name;
+        this.age = age;
+        this.address = address;
+    }
+    getName() {
+        return this.name;
+    }
+    getAge() {
+        return this.age;
+    }
+    getAddress() {
+        return this.address;
+    }
+}
+const johnPerson = new Person("John", 18, "Gurukul road, Ahmedabad - Gujarat");
+console.log("\n john get name", johnPerson.getName());
+console.log("\n john get age", johnPerson.getAge());
+console.log("\n john get address", johnPerson.getAddress());
+/*
+ * Create a TypeScript class that represents a game with methods for starting, pausing, and ending the game.
+ *
+ */
+class Game {
+    constructor(playerOne, playerTwo) {
+        this.playerOne = playerOne;
+        this.playerTwo = playerTwo;
+    }
+    startGame() {
+        return "Game has begin. Hurry Up!!!!";
+    }
+    pauseGame() {
+        return "Game has stopped. Please take rest.";
+    }
+    endGame() {
+        return "Hurray game has ended. You guess who won the game.";
+    }
+}
+const myFirstGame = new Game("Bhanudatsinh", "Pratik");
+setTimeout(() => {
+    console.log("\n Start the Game ---", myFirstGame.startGame());
+}, 2000);
+setTimeout(() => {
+    console.log("\n Pause the Game ---", myFirstGame.pauseGame());
+}, 3000);
+setTimeout(() => {
+    console.log("\n End the Game ---", myFirstGame.endGame());
+}, 4000);
+/*
+ * Create a TypeScript class that represents a weather app with methods for displaying the current temperature,
+ * wind speed, and precipitation.
+ *
+ */
+class Weather {
+    constructor(temperature, windSpeed, percipitation) {
+        this.temperature = temperature;
+        this.windSpeed = windSpeed;
+        this.percipitation = percipitation;
+    }
+    getTemperature() {
+        return `Current temperature is ${this.temperature} deg C`;
+    }
+    getWindSpeed() {
+        return `Wind is blowing at a speed of ${this.windSpeed} KpH`;
+    }
+    getPercipitation() {
+        return `Today's weather is ${this.percipitation}%`;
+    }
+}
+const weatherForecast = new Weather(55, 50, 3);
+setTimeout(() => {
+    console.log("\n Temperature ---", weatherForecast.getTemperature());
+}, 5000);
+setTimeout(() => {
+    console.log("\n Wind Speed ---", weatherForecast.getWindSpeed());
+}, 6000);
+setTimeout(() => {
+    console.log("\n Percipitation ---", weatherForecast.getPercipitation());
+}, 7000);
 class Vehicle {
     constructor(name, maxSpeed, engine, price, color) {
         this.name = name;

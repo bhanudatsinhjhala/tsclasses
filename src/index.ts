@@ -4,69 +4,69 @@
  *
  */
 
-// class Person {
-//   name: string;
-//   age: number;
-//   address: string;
-//   constructor(name: string, age: number, address: string) {
-//     this.name = name;
-//     this.age = age;
-//     this.address = address;
-//   }
+class Person {
+  name: string;
+  age: number;
+  address: string;
+  constructor(name: string, age: number, address: string) {
+    this.name = name;
+    this.age = age;
+    this.address = address;
+  }
 
-//   getName(): string {
-//     return this.name;
-//   }
-//   getAge(): number {
-//     return this.age;
-//   }
-//   getAddress(): string {
-//     return this.address;
-//   }
-// }
+  getName(): string {
+    return this.name;
+  }
+  getAge(): number {
+    return this.age;
+  }
+  getAddress(): string {
+    return this.address;
+  }
+}
 
-// const johnPerson = new Person("John", 18, "Gurukul road, Ahmedabad - Gujarat");
+const johnPerson = new Person("John", 18, "Gurukul road, Ahmedabad - Gujarat");
 
-// console.log("\n john get name", johnPerson.getName());
-// console.log("\n john get age", johnPerson.getAge());
-// console.log("\n john get address", johnPerson.getAddress());
+console.log("\n john get name", johnPerson.getName());
+console.log("\n john get age", johnPerson.getAge());
+console.log("\n john get address", johnPerson.getAddress());
 
 /*
  * Create a TypeScript class that represents a game with methods for starting, pausing, and ending the game.
  *
  */
 
-// class Game {
-//   playerOne: string;
-//   playerTwo: string;
-//   constructor(playerOne: string, playerTwo: string) {
-//     this.playerOne = playerOne;
-//     this.playerTwo = playerTwo;
-//   }
+class Game {
+  playerOne: string;
+  playerTwo: string;
+  constructor(playerOne: string, playerTwo: string) {
+    this.playerOne = playerOne;
+    this.playerTwo = playerTwo;
+  }
 
-//   startGame(): string {
-//     return "Game has begin. Hurry Up!!!!";
-//   }
-//   pauseGame(): string {
-//     return "Game has stopped. Please take rest.";
-//   }
-//   endGame(): string {
-//     return "Hurray game has ended. You guess who won the game.";
-//   }
-// }
+  startGame(): string {
+    return "Game has begin. Hurry Up!!!!";
+  }
+  pauseGame(): string {
+    return "Game has stopped. Please take rest.";
+  }
+  endGame(): string {
+    return "Hurray game has ended. You guess who won the game.";
+  }
+}
 
-// const myFirstGame = new Game("Bhanudatsinh", "Pratik");
+const myFirstGame = new Game("Bhanudatsinh", "Pratik");
 
-// setTimeout(() => {
-//   console.log("\n Start the Game ---", myFirstGame.startGame());
-// }, 2000);
-// setTimeout(() => {
-//   console.log("\n Pause the Game ---", myFirstGame.pauseGame());
-// }, 3000);
+setTimeout(() => {
+  console.log("\n Start the Game ---", myFirstGame.startGame());
+}, 2000);
+setTimeout(() => {
+  console.log("\n Pause the Game ---", myFirstGame.pauseGame());
+}, 3000);
 
-// setTimeout(() => {
-//   console.log("\n End the Game ---", myFirstGame.endGame());
-// }, 4000);
+setTimeout(() => {
+  console.log("\n End the Game ---", myFirstGame.endGame());
+}, 4000);
 
 /*
  * Create a TypeScript class that represents a weather app with methods for displaying the current temperature,
@@ -74,41 +74,41 @@
  *
  */
 
-// class Weather {
-//   temperature: number;
-//   windSpeed: number;
-//   percipitation: number;
+class Weather {
+  temperature: number;
+  windSpeed: number;
+  percipitation: number;
 
-//   constructor(temperature: number, windSpeed: number, percipitation: number) {
-//     this.temperature = temperature;
-//     this.windSpeed = windSpeed;
-//     this.percipitation = percipitation;
-//   }
+  constructor(temperature: number, windSpeed: number, percipitation: number) {
+    this.temperature = temperature;
+    this.windSpeed = windSpeed;
+    this.percipitation = percipitation;
+  }
 
-//   getTemperature(): string {
-//     return `Current temperature is ${this.temperature} deg C`;
-//   }
-//   getWindSpeed(): string {
-//     return `Wind is blowing at a speed of ${this.windSpeed} KpH`;
-//   }
-//   getPercipitation(): string {
-//     return `Today's weather is ${this.percipitation}%`;
-//   }
-// }
+  getTemperature(): string {
+    return `Current temperature is ${this.temperature} deg C`;
+  }
+  getWindSpeed(): string {
+    return `Wind is blowing at a speed of ${this.windSpeed} KpH`;
+  }
+  getPercipitation(): string {
+    return `Today's weather is ${this.percipitation}%`;
+  }
+}
 
-// const weatherForecast = new Weather(55, 50, 3);
+const weatherForecast = new Weather(55, 50, 3);
 
-// setTimeout(() => {
-//   console.log("\n Temperature ---", weatherForecast.getTemperature());
-// }, 5000);
+setTimeout(() => {
+  console.log("\n Temperature ---", weatherForecast.getTemperature());
+}, 5000);
 
-// setTimeout(() => {
-//   console.log("\n Wind Speed ---", weatherForecast.getWindSpeed());
-// }, 6000);
+setTimeout(() => {
+  console.log("\n Wind Speed ---", weatherForecast.getWindSpeed());
+}, 6000);
 
-// setTimeout(() => {
-//   console.log("\n Percipitation ---", weatherForecast.getPercipitation());
-// }, 7000);
+setTimeout(() => {
+  console.log("\n Percipitation ---", weatherForecast.getPercipitation());
+}, 7000);
 
 /*
  * Create a TypeScript interface that defines the properties and methods of a vehicle.
