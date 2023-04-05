@@ -259,3 +259,48 @@ class motorcycle extends Vehicle {
 const motorCycle = new motorcycle("green", "sports", "KTM", 250, 250, 2_00_000);
 
 console.log("motorCycle --- ", motorCycle.getMotorCycleType());
+
+/*
+ * Create a TypeScript interface that defines the properties and methods of a shape.
+ * Implement the interface in a class that represents a rectangle.
+ *
+ */
+
+interface ShapeInterface {
+  getName(): string;
+}
+
+class Shape implements ShapeInterface {
+  name: string;
+  color: string;
+
+  constructor(name: string, color: string) {
+    this.name = name;
+    this.color = color;
+  }
+
+  getName(): string {
+    return `Shape name is ${this.name}`;
+  }
+}
+class Rectangle extends Shape {
+  length: number;
+  breadth: number;
+
+  constructor(length: number, breadth: number, name: string, color: string) {
+    super(name, color);
+    this.length = length;
+    this.breadth = breadth;
+  }
+
+  getLength() {
+    return `${this.name}'s length is ${this.length}`;
+  }
+  getArea() {
+    return `${this.name}'s area is ${this.length * this.breadth}`;
+  }
+}
+
+const firstRectangle = new Rectangle(5, 5, "first-rectangle", "blue");
+
+console.log("firstRectangle --- ", firstRectangle.getArea());

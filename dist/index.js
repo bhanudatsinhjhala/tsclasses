@@ -66,3 +66,27 @@ class motorcycle extends Vehicle {
 }
 const motorCycle = new motorcycle("green", "sports", "KTM", 250, 250, 200000);
 console.log("motorCycle --- ", motorCycle.getMotorCycleType());
+class Shape {
+    constructor(name, color) {
+        this.name = name;
+        this.color = color;
+    }
+    getName() {
+        return `Shape name is ${this.name}`;
+    }
+}
+class Rectangle extends Shape {
+    constructor(length, breadth, name, color) {
+        super(name, color);
+        this.length = length;
+        this.breadth = breadth;
+    }
+    getLength() {
+        return `${this.name}'s length is ${this.length}`;
+    }
+    getArea() {
+        return `${this.name}'s area is ${this.length * this.breadth}`;
+    }
+}
+const firstRectangle = new Rectangle(5, 5, "first-rectangle", "blue");
+console.log("firstRectangle --- ", firstRectangle.getArea());
